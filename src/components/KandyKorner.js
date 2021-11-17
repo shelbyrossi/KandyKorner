@@ -1,7 +1,8 @@
 
 import React from "react"
-import {LocationsList} from './locations/LocationsList'
-import { ProductsList } from "./products/ProductList"
+import { NavBar } from "./nav/NavBar"
+import { ApplicationViews } from  "./ApplicationViews"
+
 
 
 export const KandyKorner = () => {
@@ -10,13 +11,11 @@ export const KandyKorner = () => {
     return (
 // <> Fragment - putting all return elements into one JXS element 
         <> 
+        <NavBar/>
             <h1>Kandy Korner</h1>
                
-                <h1>Locations List</h1>
-                {/* invoking component */}
-                <LocationsList/>
-                <h2>Products List</h2>
-                <ProductsList/>
+                 {/* renders correct component based on url */}
+                 <ApplicationViews />
 
                
 
