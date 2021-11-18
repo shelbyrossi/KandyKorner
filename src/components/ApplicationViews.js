@@ -2,6 +2,9 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { ProductsList } from "./products/ProductList"
 import { LocationsList } from "./locations/LocationsList"
+import { EmployeeForm} from "./employees/EmployeeForm"
+import {EmployeeList} from "./employees/EmployeeList"
+
 
 // listens for change (click of hyperlink) and renders appropriate component 
 export const ApplicationViews = () => {
@@ -19,6 +22,17 @@ export const ApplicationViews = () => {
                 <ProductsList />
             </Route>
 
+            {/* when the url is employees, display EmployeeForm */}
+            <Route exact path="/employees/create">
+                {/* child */}
+                <EmployeeForm />
+            </Route>
+
+             {/* when the url is employees, display EmployeeList */}
+             <Route exact path="/employees">
+                {/* child */}
+                <EmployeeList />
+            </Route>
 
 
         </>
