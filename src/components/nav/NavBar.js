@@ -25,6 +25,10 @@ export const NavBar = () => {
             <li className="navbar_item">
                 <Link className="navbar_link" to="/employees">Employees</Link>
             </li>
+            <li className="navbar_item">
+                <Link className="navbar_link" to="/customers">Customers</Link>
+            </li>
+
 
             <li className="navbar_item">
                 {/* when Logout is clicked, removes key value pair */}
